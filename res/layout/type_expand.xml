@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:id="@+id/goodslist"
+    android:orientation="horizontal"
+    android:background="@drawable/goodslist" >
+    
+    <CheckBox 
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"/>
+    
+    <TextView 
+        android:id="@+id/goodsname"
+        android:layout_width="70dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@id/checkbox"
+        android:layout_marginLeft="35dip"
+        android:textColor="@android:color/black"
+        android:text="@string/test"
+        android:textSize="12sp"
+        android:ellipsize="end"
+        android:singleLine="true"/>
+    
+    <TextView 
+        android:id="@+id/credits"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@id/goodsname"
+        android:layout_marginLeft="70dip"
+        android:textColor="@android:color/black"
+        android:text="@string/test"
+        android:textSize="12sp"/>
+    
+    <TextView 
+        android:id="@+id/price"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@id/credits"
+        android:layout_marginLeft="70dip"
+        android:textColor="@android:color/black"
+        android:text="@string/test"
+        android:textSize="12sp"/>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add"
+            android:contentDescription="@string/pic"
+            android:id="@+id/add_btn"/>
+        <TextView 
+            android:id="@+id/number"
+            android:layout_width="26dip"
+            android:layout_height="26dip"
+            android:background="@drawable/no"
+            android:text="@string/no"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"
+            android:contentDescription="@string/pic"
+            android:id="@+id/del_btn"/>
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>
